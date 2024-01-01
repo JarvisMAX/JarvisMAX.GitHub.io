@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0; border:0;}
+body{ background:url(../images/bg.jpg) repeat-x #f3f3f3;}
+body,td,th {
+	font-size: 12px;
+	color: #000000;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.STYLE2 {color: #FFFFFF}
+body {
+	background-color: #ece4d1;
+}
+.STYLE3 {
+	font-size: 14;
+	font-weight: bold;
+}
+.STYLE6 {color: #FFFFFF; font-size: 14; font-weight: bold; }
+.STYLE6 a{color:#FFFFFF; font-size:14px; display:block; height:30px; line-height:30px; padding:0px 20xp;}
+.STYLE6 a.aa{ background:#fff; color:#000;}
+p{ color:#281705;}
+.img1{ margin:10px 30px;}
+.neirong{padding:10px 30px;}
+.neirong p{ line-height:34px;}
+.neirong h1{ height:40px; line-height:40px; text-align:center; background:#feba65; font-size:16px; font-weight:bold;}
+.quhua tr td{height:30px; line-height:30px;}
+
+.xinwen  h1{ height:40px; line-height:40px; text-align:center; background:#feba65; font-size:16px; font-weight:bold;}
+.xinwen p{ line-height:34px;}
+.xinwen table tr td{height:34px; line-height:34px; background:#CCCCCC; text-indent:10px;}
+
+.mshd{ width:800px; margin:0 auto;}
+.mshd tr td{ text-align:center; line-height:30px; font-size:14px; padding-top:20px;}
+.mshd tr td img{ display:block; border:1px solid #ccc; padding:2px; width:300px; height:200px; text-align:center; }
+
+.neixiangce{ width:800px; margin:0 auto;}
+.neixiangce tr td{ text-align:center; line-height:30px; font-size:14px; padding-top:20px;}
+.neixiangce tr td img{ display:block; border:1px solid #ccc; padding:2px; width:200px; height:150px; text-align:center; }
+
+.datu{ width:800px; margin:0 auto;}
+.datu tr td{ text-align:left; line-height:30px; font-size:14px; padding-top:20px;}
+.fanhui a{width:80px; height:22px; display:block; line-height:22px; background:#feba65; border:1px solid #000000; text-align:center;}
+.huifu{width:80px; height:22px; display:block; line-height:22px; background:#f9dcb8; border:1px solid #feba65; text-align:center; margin-top:10px;}
+
+
+
+
+
+
+
+
