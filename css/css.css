@@ -3,7 +3,7 @@
 *{padding:0; margin:0; border:0;}
 body{ background:url(../images/bg.jpg) repeat-x #f3f3f3;}
 body,td,th {
-	font-size: 12px;
+	font-size: 20px;
 	color: #000000;
 }
 a:link {
@@ -35,7 +35,7 @@ body {
 .STYLE6 a.aa{ background:#fff; color:#000;}
 p{ color:#281705;}
 .img1{ margin:10px 30px;}
-.neirong{padding:10px 30px;}
+.neirong{padding:20px 30px;}
 .neirong p{ line-height:34px;}
 .neirong h1{ height:40px; line-height:40px; text-align:center; background:#feba65; font-size:16px; font-weight:bold;}
 .quhua tr td{height:30px; line-height:30px;}
@@ -56,8 +56,85 @@ p{ color:#281705;}
 .datu tr td{ text-align:left; line-height:30px; font-size:14px; padding-top:20px;}
 .fanhui a{width:80px; height:22px; display:block; line-height:22px; background:#feba65; border:1px solid #000000; text-align:center;}
 .huifu{width:80px; height:22px; display:block; line-height:22px; background:#f9dcb8; border:1px solid #feba65; text-align:center; margin-top:10px;}
+.donghua {
+    /*轮播*/
+    border-radius: 5px;/*边框弧度*/
+    width: 70%;
+    height: 250px;
+    overflow: hidden;/*图片隐藏*/
+    margin: 10px 200px 0px 300px;
+}
 
+#photo {/*轮播图片的总设置*/
+    display: block;/*块展示*/
+    width: 200px;
+    height: 250px;
+    animation: bj 9s linear infinite;/*动画设置*/
+    /*动画*/
+}
 
+#photo img {
+    float: left;
+    width: 900px;
+    height: 100%;
+    padding: 0px 0px 0px 0px  0px 0px;
+}
+
+@keyframes bj {/*轮播图动画*/
+
+    0%,
+    20% {
+        margin-left: 0px;
+    }
+
+    25%,
+    40% {
+        margin-left: -1200px;
+    }
+
+    45%,
+    60% {
+        margin-left: -2400px;
+    }
+
+    65%,
+    80% {
+        margin-left: -3600px;
+    }
+
+    85%,
+    100% {
+        margin-left: -4800px;
+    }
+ }
+ .paragraph {
+    text-indent: 2em; /* 缩进2个字符，根据需要调整值 */
+    margin-top: 20px;    /* 上边距为10像素，根据需要调整值 */
+    margin-bottom: 10px; /* 下边距为10像素，根据需要调整值 */
+    margin-left: 20px;   /* 左边距为20像素，根据需要调整值 */
+    margin-right: 20px;  /* 右边距为20像素，根据需要调整值 */
+    position: relative;
+    display: inline-block;
+    background-color: #c68e8e; /* 文本框背景颜色 */
+    padding: 10px; /* 文本框内边距 */
+    border: 1px solid #d75b5b; /* 文本框边框 */
+    border-radius: 15px; /* 设置边框圆角，使其呈现弧形效果 */
+  }
+
+  .paragraph::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #387077; /* 虚线的颜色 */
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+  .paragraph p {
+    margin-bottom: 10px; /* 段落之间的底边距 */
+  }
 
 
 

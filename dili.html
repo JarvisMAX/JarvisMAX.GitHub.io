@@ -32,6 +32,7 @@
     <td width="13%" height="42"><div align="center" class="STYLE6"><a href="lvyou.html">旅游景点</a></div></td>
     <td width="13%" height="42"><div align="center" class="STYLE6"><a href="xinwen.html">新闻中心</a></div></td>
     <td width="13%" height="42"><div align="center" class="STYLE6"><a href="xiangce.html">南京相册</a></div></td>
+    <td width="13%" height="42"><div align="center" class="STYLE6"><a href="https://vacations.ctrip.com/list/whole/sc2.html/?st=%E5%8D%97%E4%BA%AC&startcity=2">旅游指导</a></div></td>
   </tr>
 </table>
       </td>
@@ -43,7 +44,80 @@
       <td height="42" colspan="2">
       	<div style="text-align:center">
 <!-- 代码 开始 -->
-<script type="text/javascript">
+<style>
+  body {
+    margin: 0; /* 去除页面默认的边距 */
+    overflow-x: hidden; /* 隐藏水平滚动条 */
+  }
+
+  #carousel-container {
+    width: 70vw; /* 设置轮播容器宽度为视口宽度 */
+    height: 30vw;
+    overflow: hidden;
+  }
+
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* 确保子元素（图片）填满父容器 */
+    width: 100%;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item img {
+    width: 100%; /* 图片宽度占据父容器的100% */
+    object-fit: cover; /* 拉伸图片以覆盖整个容器 */
+    object-position: bottom; /* 图片底部对齐 */
+    height: auto; /* 图片高度占据父容器的100% */
+    display: block; /* 去除图片底部间隙 */
+  }
+</style>
+
+
+</head>
+<body>
+<div id="carousel-container">
+  <div id="carousel">
+      <!-- 在轮播图列表两端添加重复的图片 -->
+      <div class="carousel-item"><img src="images/ad4.jpg" alt="Image 5"></div>
+      <div class="carousel-item"><img src="images/ad1.jpg" alt="Image 1"></div>
+      <div class="carousel-item"><img src="images/ad2.jpg" alt="Image 2"></div>
+      <div class="carousel-item"><img src="images/ad3.jpg" alt="Image 3"></div>
+      <div class="carousel-item"><img src="images/ad5.jpg" alt="Image 4"></div>
+      <div class="carousel-item"><img src="images/ad6.jpg" alt="Image 5"></div>
+
+  </div>
+</div>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  let currentIndex = 1;
+
+  function updateCarousel() {
+      const itemWidth = document.querySelector('.carousel-item').offsetWidth;
+      carousel.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+  }
+
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % 6;
+      updateCarousel();
+  }
+
+  function prevSlide() {
+      currentIndex = (currentIndex - 1 + 4) % 6;
+      updateCarousel();
+  }
+
+  // 启动定时器，每隔一定时间切换到下一张图片
+  setInterval(nextSlide, 3000);
+
+  updateCarousel();
+</script>
+<!-- <script type="text/javascript">
     //imgLink3="";
      var focus_width=1024	
      var focus_height=250
@@ -59,7 +133,7 @@
      flashCode = flashCode + '<embed src="images/focus.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+ focus_width +'" height="'+ swf_height +'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" wmode="transparent"/></embed>';
      flashCode = flashCode + '</object>';
      document.write(flashCode)
-</script>
+</script> -->
 <!-- 代码 结束 -->
 </div>
       </td>
@@ -69,7 +143,7 @@
         <tr>
         	<td colspan="2" class="neirong">
             	<h1>地理环境</h1>
-                
+ <div class="paragraph">               
 <p><strong>区位</strong></p>
 <p>南京位于长江下游中部富庶地区，江苏省西南部。地理坐标为北纬31°14″至32°37″，东经118°22″至119°14″。市中心新街口地理坐标为北纬32°02'38&quot;、东经118°46'43&quot;。总面积6597k㎡（不含水域），截至2012年建成区面积752.83k㎡。</p>
 <p><strong>地貌</strong><br />
@@ -87,7 +161,7 @@
   南京春秋短、冬夏长，冬夏温差显著，四季各有特色，皆宜旅游。因此就有了“春游牛首烟岚”、“夏赏钟阜晴云”、“秋登栖霞胜境”、“冬观石城霁雪”之说。近来由于大气环流的变化以及南京不断的植树造林，南京夏天的炎热程度与江南、华南其他都市相比大为减轻，故有为南京摘去“火炉”帽子的说法。</p>
 <p><strong>资源</strong><br />
   南京地处北亚热带，属于中国现代植物资源最丰富、植物种类最繁多的地区。又以山丘、河湖兼备，气候温和，而野生动物资源丰富繁多，其动物种类，足以代表长江下游地区。野生动物资源丰富，栖息、繁衍的国家级保护动物有中华鲟、白鳍豚、扬子鳄、河鹿、江豚、鸳鸯、长耳鹗、短耳鹗等。<br />
-  南京蕴藏着较丰富的矿产资源，境内已发现54种矿藏。铁、铜、铝、锌、金、银、锶等15种矿储量江苏第一，4种进入全国前6位。其中，铁硫储量占全省40%左右，锶矿品位高、储量大，为东南亚之首。地下水源丰富，水质优良，温泉是南京主要的地热资源，著名的有汤山温泉、汤泉温泉、珍珠泉温泉等。</p></td>
+  南京蕴藏着较丰富的矿产资源，境内已发现54种矿藏。铁、铜、铝、锌、金、银、锶等15种矿储量江苏第一，4种进入全国前6位。其中，铁硫储量占全省40%左右，锶矿品位高、储量大，为东南亚之首。地下水源丰富，水质优良，温泉是南京主要的地热资源，著名的有汤山温泉、汤泉温泉、珍珠泉温泉等。</p></td></div>
         </tr>
         
         
